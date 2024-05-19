@@ -1,11 +1,13 @@
 // TODO: include를 적절하게 추가
+#include "linked_list.h"
 #include "list.h"
 #include "queue.h"
 #include "stack.h"
 #include <iostream>
+#include <exception>
 
 // TODO: T 타입을 적절한 타입으로 변경
-void print(T &list) { list.print(); }
+void print(LinkedList &list) { list.print(); }
 
 void testQueue() {
   Queue queue;
@@ -15,7 +17,7 @@ void testQueue() {
 
   for (int i = 100; i > 90; i--)
     queue += i;
-
+  
   std::cout << queue.peek() << std::endl;
   print(queue);
 

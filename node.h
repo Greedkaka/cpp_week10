@@ -15,6 +15,7 @@ private:
   Node *next_;
 
   friend class LinkedList;
+  friend class List;
   friend class Queue;
   friend class Stack;
 };
